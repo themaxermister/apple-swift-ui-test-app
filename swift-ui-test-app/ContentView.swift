@@ -30,7 +30,50 @@ class ViewModel:ObservableObject {
 
 struct ContentView: View {
     @StateObject var viewModel = ViewModel()
+    @State private var stateVar = "Press the button!"
     var body: some View {
+        /*
+        Text("Hello, world a very long line of text that i will keep adding into over and over again!")
+            .font(.largeTitle)
+            .fontWeight(.thin)
+            .foregroundColor(.white)
+            .background(.black)
+            .multilineTextAlignment(.center)
+            .lineLimit(2)
+            .truncationMode(.tail)
+        */
+        /*
+        VStack{
+            Text("User Input: \(stateVar)")
+            TextField("Enter name", text: $stateVar)
+                .multilineTextAlignment(.center)
+                .padding()
+        }
+         */
+        /*
+        HStack(alignment: .firstTextBaseline, spacing: 30){
+            Text("Test")
+            Text("Test2")
+            Text("Test3")
+            Text("Test4")
+            Text("Test5")
+            Text("Test6")
+            Text("Test7")
+            Text("Test8")
+            Text("Testering")
+        }
+        */
+        /*
+        VStack(alignment: .center, spacing: 50){
+            Text(stateVar)
+            Button(action:{
+                self.stateVar = "Clicked!"
+            }){
+                Text("Click Me!")
+            }.disabled(stateVar == "Clicked!")
+        }
+         */
+        
         NavigationView {
             VStack{
                 Spacer()
